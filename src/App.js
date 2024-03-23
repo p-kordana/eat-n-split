@@ -71,6 +71,7 @@ function App() {
 
       {selectedFriend && (
         <FormSplitBill
+          key={selectedFriend.id}
           selectedFriend={selectedFriend}
           onBalanceUpdate={handleBalanceUpdate}
         />
